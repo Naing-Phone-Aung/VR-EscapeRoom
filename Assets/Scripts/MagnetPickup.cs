@@ -12,15 +12,14 @@ public class MagnetPickup : MonoBehaviour
 
         if (grab == null || rb == null) return;
 
-        if (grab.isSelected) return; // already held? skip
+        if (grab.isSelected) return; 
 
-        // ✅ Attach key to magnet
-        grab.enabled = true; // make key grabbable now
+        grab.enabled = true; 
 
-        other.transform.SetParent(transform.parent); // parent = magnet
+        other.transform.SetParent(transform.parent); 
         other.transform.position = transform.position;
         other.transform.rotation = transform.rotation;
 
-        rb.isKinematic = true; // disable physics so it stays stuck
+        rb.isKinematic = true; 
     }
 }

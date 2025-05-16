@@ -8,7 +8,7 @@ public class DistanceDetach : MonoBehaviour
     void Start()
     {
         rb = GetComponent<Rigidbody>();
-        GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>().enabled = false; // ❌ Disable grab at start
+        GetComponent<UnityEngine.XR.Interaction.Toolkit.Interactables.XRGrabInteractable>().enabled = false; 
     }
 
     void Update()
