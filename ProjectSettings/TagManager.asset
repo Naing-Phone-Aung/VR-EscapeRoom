@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Anchor
   - Key
+  - UVLight
+  - Ground
   layers:
   - Default
   - TransparentFX
