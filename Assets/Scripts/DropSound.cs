@@ -1,7 +1,7 @@
 using UnityEngine;
 
 [RequireComponent(typeof(AudioSource))]
-public class MetalRodSound : MonoBehaviour
+public class DropSound : MonoBehaviour
 {
     public AudioClip hitSound;
     private AudioSource audioSource;
@@ -14,10 +14,6 @@ public class MetalRodSound : MonoBehaviour
 
     void OnCollisionEnter(Collision collision)
     {
-        // Optional: check if it hit the ground by tag
-        if (collision.gameObject.CompareTag("Ground"))
-        {
-            audioSource.PlayOneShot(hitSound);
-        }
+        audioSource.PlayOneShot(hitSound);
     }
 }

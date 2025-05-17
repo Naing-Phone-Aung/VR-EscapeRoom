@@ -10,7 +10,6 @@ public class KeypadController : MonoBehaviour
 
     [Header("Door")]
     public GameObject door;
-    public Transform pivotPoint;
     public Animator doorAnimator;
 
     [Header("Keypad Activation Trigger")]
@@ -20,6 +19,7 @@ public class KeypadController : MonoBehaviour
     public AudioSource audioSource;
     public AudioClip correctSound;
     public AudioClip wrongSound;
+    public AudioClip buttonPressSound;
 
     [Header("Code Settings")]
     public string correctCode = "1234";
@@ -36,6 +36,7 @@ public class KeypadController : MonoBehaviour
     public void AddDigit(string digit)
     {
         if (unlocked) return;
+        PlaySound(buttonPressSound);
 
         if (currentInput.Length < 10)
         {
@@ -47,6 +48,7 @@ public class KeypadController : MonoBehaviour
     public void Backspace()
     {
         if (unlocked) return;
+        PlaySound(buttonPressSound);
 
         if (currentInput.Length > 0)
         {
@@ -72,7 +74,12 @@ public class KeypadController : MonoBehaviour
                 keypadCanvas.SetActive(false);
 
             if (keypadActivatorObject != null)
-                keypadActivatorObject.SetActive(false);
+            {
+                KeypadActivator activator = keypadActivatorObject.GetComponent<KeypadActivator>();
+                if (activator != null)
+                    activator.LockActivator();
+            }
+
         }
         else
         {
