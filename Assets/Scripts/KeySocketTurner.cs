@@ -10,13 +10,17 @@ public class KeySocketTurner : MonoBehaviour
     public Transform attachTransform;
     public Rigidbody doorRigidbody;
 
+    public AudioClip keyTurningClip; // 🔊 Audio that plays while the key turns
+
     private XRSocketInteractor socket;
     private bool hasTurned = false;
     private Quaternion initialAttachRotation;
+    private AudioSource audioSource;
 
     void Awake()
     {
         socket = GetComponentInChildren<XRSocketInteractor>();
+        audioSource = GetComponent<AudioSource>();
 
         if (attachTransform != null)
             initialAttachRotation = attachTransform.localRotation;
@@ -46,6 +50,12 @@ public class KeySocketTurner : MonoBehaviour
         Quaternion endRot = startRot * Quaternion.Euler(0f, 0f, turnAngle);
 
         float elapsed = 0f;
+
+        if (keyTurningClip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(keyTurningClip);
+        }
+
         while (elapsed < turnDuration)
         {
             attachTransform.localRotation = Quaternion.Slerp(startRot, endRot, elapsed / turnDuration);
