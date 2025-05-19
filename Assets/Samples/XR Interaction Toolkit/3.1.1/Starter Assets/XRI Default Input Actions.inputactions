@@ -3397,6 +3397,34 @@
                     "isPartOfComposite": true
                 }
             ]
+        },
+        {
+            "name": "Custom Inputs",
+            "id": "135422ec-6933-4122-9997-f27faf025e00",
+            "actions": [
+                {
+                    "name": "MenuButton",
+                    "type": "Button",
+                    "id": "1642b39d-4e2e-44a5-b74f-17485bf28052",
+                    "expectedControlType": "",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "21ae708f-7758-4b9f-849b-6440742c0002",
+                    "path": "<XRController>/{MenuButton}",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "MenuButton",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
