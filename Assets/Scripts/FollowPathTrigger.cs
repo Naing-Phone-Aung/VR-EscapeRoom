@@ -48,10 +48,10 @@ public class FollowPathTrigger : MonoBehaviour
 
             trapCoroutine = StartCoroutine(WaitAndRespawn(3f));
         }
-        else if (other.CompareTag("Goal"))
-        {
-            Debug.Log("You finished the level.");
-        }
+        //else if (other.CompareTag("Goal"))
+        //{
+        //    Debug.Log("You finished the level.");
+        //}
     }
 
     private void OnTriggerExit(Collider other)
@@ -125,9 +125,9 @@ public class FollowPathTrigger : MonoBehaviour
         while (true)
         {
             warningCanvas.alpha = 0f;
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.6f);
             warningCanvas.alpha = 1f;
-            yield return new WaitForSeconds(0.4f);
+            yield return new WaitForSeconds(0.6f);
         }
     }
 
