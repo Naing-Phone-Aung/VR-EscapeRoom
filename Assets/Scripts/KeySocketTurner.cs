@@ -1,6 +1,5 @@
 ﻿using System.Collections;
 using UnityEngine;
-using UnityEngine.XR.Interaction.Toolkit;
 using UnityEngine.XR.Interaction.Toolkit.Interactors;
 
 public class KeySocketTurner : MonoBehaviour
@@ -10,7 +9,7 @@ public class KeySocketTurner : MonoBehaviour
     public Transform attachTransform;
     public Rigidbody doorRigidbody;
 
-    public AudioClip keyTurningClip; // 🔊 Audio that plays while the key turns
+    public AudioClip keyTurningClip;
 
     private XRSocketInteractor socket;
     private bool hasTurned = false;

@@ -9,6 +9,7 @@ TagManager:
   - UVLight
   - Ground
   - Controller
+  - Trap
   layers:
   - Default
   - TransparentFX
