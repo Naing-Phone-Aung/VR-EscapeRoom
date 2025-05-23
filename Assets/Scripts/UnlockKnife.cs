@@ -18,7 +18,7 @@ public class UnlockKnife : MonoBehaviour
         if (!knife.enabled && socket1.hasSelection && socket2.hasSelection && socket3.hasSelection)
         {
             knife.enabled = true;
-            Debug.Log("Knife is now unlocked.");
+            Debug.Log("Knife is unlocked.");
         }
     }
 }
