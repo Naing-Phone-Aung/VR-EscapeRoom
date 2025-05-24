@@ -46,7 +46,7 @@ public class FollowPathTrigger : MonoBehaviour
                 moveProvider.moveSpeed = slowSpeed;
             }
 
-            trapCoroutine = StartCoroutine(WaitAndRespawn(3f));
+            trapCoroutine = StartCoroutine(WaitAndRespawn(2.5f));
         }
         //else if (other.CompareTag("Goal"))
         //{
