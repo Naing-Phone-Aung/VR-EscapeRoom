@@ -3290,6 +3290,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: LeftHand
       objectReference: {fileID: 0}
+    - target: {fileID: 4767892898742477008, guid: 82ba8fa12c028034e8dc8fe678c0b477, type: 3}
+      propertyPath: handInteractor
+      value: 
+      objectReference: {fileID: 4052627024782463686}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -3411,6 +3415,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 588222211781548544}
   m_SourcePrefab: {fileID: 100100000, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+--- !u!114 &4052627024782463686 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8877177980677234388, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 4832292691664505874}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &4696354221852035539 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 153982007679157697, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
@@ -3494,6 +3509,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1670256625, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
   m_PrefabInstance: {fileID: 4832292691664505874}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6425884015615380569 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1883230248363655243, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+  m_PrefabInstance: {fileID: 4832292691664505874}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 25a07ef133a37d140a87cdf1f1c75fdf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6016638365406209274
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -3502,6 +3528,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 4832292692227464163}
     m_Modifications:
+    - target: {fileID: 978456651658119435, guid: 18d6c10a69abfe04db6dd4e18e5a23ce, type: 3}
+      propertyPath: handInteractor
+      value: 
+      objectReference: {fileID: 6425884015615380569}
     - target: {fileID: 4790197965203847057, guid: 18d6c10a69abfe04db6dd4e18e5a23ce, type: 3}
       propertyPath: m_Name
       value: RightHand
