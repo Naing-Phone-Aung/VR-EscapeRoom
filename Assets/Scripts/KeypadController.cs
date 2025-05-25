@@ -21,6 +21,10 @@ public class KeypadController : MonoBehaviour
     public AudioClip wrongSound;
     public AudioClip buttonPressSound;
 
+    [Header("Secondary Audio / Visuals On Success")]
+    public AudioSource successAudioSource;
+    public AudioClip successClip;
+
     [Header("Code Settings")]
     public string correctCode = "1234";
 
@@ -56,7 +60,6 @@ public class KeypadController : MonoBehaviour
             UpdateDisplay();
         }
     }
-
     public void Submit()
     {
         if (unlocked) return;
@@ -66,6 +69,7 @@ public class KeypadController : MonoBehaviour
             unlocked = true;
 
             PlaySound(correctSound);
+            PlaySuccessEffect(); // <- new line
 
             if (doorAnimator != null)
                 doorAnimator.SetTrigger("Open");
@@ -79,7 +83,6 @@ public class KeypadController : MonoBehaviour
                 if (activator != null)
                     activator.LockActivator();
             }
-
         }
         else
         {
@@ -89,6 +92,16 @@ public class KeypadController : MonoBehaviour
         currentInput = "";
         UpdateDisplay();
     }
+
+    private void PlaySuccessEffect()
+    {
+        if (successAudioSource != null && successClip != null)
+        {
+            successAudioSource.clip = successClip;
+            successAudioSource.Play();
+        }
+    }
+
 
     private void PlaySound(AudioClip clip)
     {

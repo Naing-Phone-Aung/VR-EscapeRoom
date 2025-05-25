@@ -3753,7 +3753,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 967347463811225326, guid: 80bff97b5a8049943990ec911c5767f6, type: 3}
       propertyPath: m_text
-      value: "Level 3 \u2013 ----------------! \nGame starting in "
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 967347463811225326, guid: 80bff97b5a8049943990ec911c5767f6, type: 3}
       propertyPath: m_fontSize
