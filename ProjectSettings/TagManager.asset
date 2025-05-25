@@ -11,6 +11,7 @@ TagManager:
   - Controller
   - Trap
   - Ball
+  - small maze
   layers:
   - Default
   - TransparentFX
