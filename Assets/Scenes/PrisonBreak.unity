@@ -5090,7 +5090,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   flashColor: {r: 1, g: 1, b: 1, a: 1}
   flashDuration: 0.6
-  flashInterval: 6
+  flashInterval: 4
   flashIntensity: 1.5
   startFlashingOnStart: 1
 --- !u!65 &311368107
@@ -16971,8 +16971,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   flashColor: {r: 1, g: 1, b: 1, a: 1}
-  flashDuration: 0.6
-  flashInterval: 6
+  flashDuration: 0.8
+  flashInterval: 4
   flashIntensity: 1.5
   startFlashingOnStart: 1
 --- !u!114 &1004366931

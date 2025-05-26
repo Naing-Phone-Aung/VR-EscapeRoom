@@ -1,16 +1,18 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class CubeToggle : MonoBehaviour
 {
     public Material whiteMat;
     public Material blackMat;
-    public AudioClip toggleSound;             
+    public AudioClip toggleSound;
     private AudioSource audioSource;
 
     private Renderer rend;
     private bool isWhite = false;
 
-    public PuzzleManager puzzleManager; 
+    public PuzzleManager puzzleManager;
 
     void Start()
     {
@@ -24,6 +26,27 @@ public class CubeToggle : MonoBehaviour
         }
 
         audioSource.playOnAwake = false;
+
+        // Subscribe to the trigger interaction
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            interactable.selectEntered.AddListener(OnTriggerPressed);
+        }
+    }
+
+    void OnDestroy()
+    {
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            interactable.selectEntered.RemoveListener(OnTriggerPressed);
+        }
+    }
+
+    private void OnTriggerPressed(SelectEnterEventArgs args)
+    {
+        Toggle();
     }
 
     public void Toggle()

@@ -1,4 +1,6 @@
 using UnityEngine;
+using UnityEngine.XR.Interaction.Toolkit;
+using UnityEngine.XR.Interaction.Toolkit.Interactables;
 
 public class InsectCube : MonoBehaviour
 {
@@ -9,6 +11,13 @@ public class InsectCube : MonoBehaviour
     private void Start()
     {
         meshRenderer = GetComponent<MeshRenderer>();
+
+        // Subscribe to the trigger interaction
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            interactable.selectEntered.AddListener(OnTriggerPressed);
+        }
         UpdateVisual();
     }
 
@@ -23,4 +32,19 @@ public class InsectCube : MonoBehaviour
     {
         meshRenderer.material = Materials[currentIndex];
     }
+
+    void OnDestroy()
+    {
+        var interactable = GetComponent<XRBaseInteractable>();
+        if (interactable != null)
+        {
+            interactable.selectEntered.RemoveListener(OnTriggerPressed);
+        }
+    }
+
+    private void OnTriggerPressed(SelectEnterEventArgs args)
+    {
+        CycleType();
+    }
+
 }
