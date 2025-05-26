@@ -12,10 +12,10 @@ EditorBuildSettings:
     path: Assets/Scenes/PrisonBreak.unity
     guid: 31a003afb1cc97540904d4c993fbdfe3
   - enabled: 1
-    path: Assets/Scenes/2nd Room.unity
+    path: Assets/Scenes/ForestEscape.unity
     guid: eaf173440ae03e94f92b4aea8e52cc62
   - enabled: 1
-    path: Assets/Scenes/3rd Room.unity
+    path: Assets/Scenes/PuzzleEscape.unity
     guid: f1ff3fdf384051d499867032a45ce881
   - enabled: 1
     path: Assets/Scenes/Final Room.unity

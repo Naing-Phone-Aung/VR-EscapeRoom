@@ -32295,7 +32295,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b67bff451a70d5b409057bf86f5eb677, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneToLoad: 2nd Room
+  sceneToLoad: ForestEscape
 --- !u!65 &2103344859
 BoxCollider:
   m_ObjectHideFlags: 0

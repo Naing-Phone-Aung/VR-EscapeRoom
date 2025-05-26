@@ -8568,7 +8568,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8361946956231075352, guid: 5353cb2d75aa3d74d8c55f2718b337f9, type: 3}
       propertyPath: m_text
-      value: 'Level 2 - Catch Those Insects!!
+      value: 'Level 2 - Forest Escape!!
 
         Game starting in '
       objectReference: {fileID: 0}
