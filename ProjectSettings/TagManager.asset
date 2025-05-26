@@ -12,6 +12,8 @@ TagManager:
   - Trap
   - Ball
   - small maze
+  - ExitBlock
+  - MazeGround
   layers:
   - Default
   - TransparentFX
