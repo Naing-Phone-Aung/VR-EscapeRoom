@@ -2,9 +2,9 @@
 
 public class BallHitHandler : MonoBehaviour
 {
-    public GameObject[] cubesToDrop; // Assign destructible cubes in Inspector
+    public GameObject[] cubesToDrop; 
     public float dropForce = 1.5f;
-    public AudioClip revealClip;     // Assign your audio clip in the Inspector
+    public AudioClip revealClip;     
     private bool triggered = false;
 
     public AudioSource audioSource;

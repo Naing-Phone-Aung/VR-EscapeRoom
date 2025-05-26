@@ -82,7 +82,7 @@ public class MenuInputHandler : MonoBehaviour
     public void QuitToMainMenu()
     {
         Time.timeScale = 1f;
-        SceneManager.LoadScene("LobbyScene");
+        SceneManager.LoadScene("Lobby Room");
     }
 
     public void BackToPauseMenu()
@@ -92,12 +92,10 @@ public class MenuInputHandler : MonoBehaviour
 
     private void ShowOnlyPanel(GameObject panelToShow)
     {
-        // Disable all first
         if (pauseMenuPanel != null) pauseMenuPanel.SetActive(false);
         if (cheatSheetPanel != null) cheatSheetPanel.SetActive(false);
         if (quitConfirmationPanel != null) quitConfirmationPanel.SetActive(false);
 
-        // Enable target
         if (panelToShow != null) panelToShow.SetActive(true);
     }
 

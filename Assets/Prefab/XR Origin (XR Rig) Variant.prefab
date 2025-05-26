@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 7988180939099410681}
   - component: {fileID: 645320268375408990}
   - component: {fileID: 4704297263914799975}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Restart
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -144,7 +144,7 @@ GameObject:
   - component: {fileID: 6140879290610775988}
   - component: {fileID: 3528497334015080555}
   - component: {fileID: 8864040622139406584}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,7 +280,7 @@ GameObject:
   - component: {fileID: 8591892795924924863}
   - component: {fileID: 508297480773047319}
   - component: {fileID: 1034768089525851741}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: CheatSheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -358,7 +358,7 @@ GameObject:
   - component: {fileID: 2484400683108027068}
   - component: {fileID: 5652666337827840173}
   - component: {fileID: 4389219785215191208}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Ans
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -504,7 +504,7 @@ GameObject:
   - component: {fileID: 5954036150401754461}
   - component: {fileID: 6045763833188095712}
   - component: {fileID: 8936150754673895955}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -640,7 +640,7 @@ GameObject:
   - component: {fileID: 945102350557150810}
   - component: {fileID: 957715632613419426}
   - component: {fileID: 5571956058846629341}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: QuitConfirm
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -719,7 +719,7 @@ GameObject:
   - component: {fileID: 3145255867716462113}
   - component: {fileID: 6984387896936256}
   - component: {fileID: 2135388397875581716}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Panel
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -800,7 +800,7 @@ GameObject:
   - component: {fileID: 7649783314594342274}
   - component: {fileID: 6302803129704338072}
   - component: {fileID: 2512126536933559082}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -936,7 +936,7 @@ GameObject:
   - component: {fileID: 1429990303718331423}
   - component: {fileID: 5670221311570528725}
   - component: {fileID: 8344969481743378765}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1073,7 +1073,7 @@ GameObject:
   - component: {fileID: 2186420044085487103}
   - component: {fileID: 951571156863015909}
   - component: {fileID: 5506903250977901243}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: MainMenu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1205,7 +1205,7 @@ GameObject:
   - component: {fileID: 3587433968876793221}
   - component: {fileID: 141679235771999107}
   - component: {fileID: 5804398936007917445}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1341,7 +1341,7 @@ GameObject:
   - component: {fileID: 2517006698370603172}
   - component: {fileID: 578326572943523214}
   - component: {fileID: 7739659149875090060}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1480,7 +1480,7 @@ GameObject:
   - component: {fileID: 6807770227897629261}
   - component: {fileID: 5639025200443360658}
   - component: {fileID: 8206888055994201687}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Menu
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1634,7 +1634,7 @@ GameObject:
   - component: {fileID: 5236836638972651814}
   - component: {fileID: 4655027583251410540}
   - component: {fileID: 4612395451010345478}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: QuitGame
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1767,7 +1767,7 @@ GameObject:
   - component: {fileID: 3722682859256217542}
   - component: {fileID: 8119742701938676308}
   - component: {fileID: 7419040497914077649}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Resume
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -1899,7 +1899,7 @@ GameObject:
   - component: {fileID: 1314939336034247}
   - component: {fileID: 8432330563973002177}
   - component: {fileID: 1421208097234985011}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2038,7 +2038,7 @@ GameObject:
   - component: {fileID: 6156077655073310806}
   - component: {fileID: 5884281606864913768}
   - component: {fileID: 6089338678459781245}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Yes
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2170,7 +2170,7 @@ GameObject:
   - component: {fileID: 3995588367546394661}
   - component: {fileID: 4049564902028506694}
   - component: {fileID: 496193698380897651}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2307,7 +2307,7 @@ GameObject:
   - component: {fileID: 4312832893294849615}
   - component: {fileID: 116022568425070949}
   - component: {fileID: 2432354747843326048}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Back
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2439,7 +2439,7 @@ GameObject:
   - component: {fileID: 9219287691357508694}
   - component: {fileID: 6574651106267750786}
   - component: {fileID: 3123497229550569847}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Pause
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2575,7 +2575,7 @@ GameObject:
   - component: {fileID: 3981377844916353078}
   - component: {fileID: 5482165130655016720}
   - component: {fileID: 5682322597300826990}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2711,7 +2711,7 @@ GameObject:
   - component: {fileID: 914524329788190733}
   - component: {fileID: 2957360800726043911}
   - component: {fileID: 4259693563851427212}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2848,7 +2848,7 @@ GameObject:
   - component: {fileID: 8350380292482869608}
   - component: {fileID: 8434600377020249210}
   - component: {fileID: 6465628236536967849}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: CheatSheet
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -2980,7 +2980,7 @@ GameObject:
   - component: {fileID: 4234227833975170906}
   - component: {fileID: 1153754543419177006}
   - component: {fileID: 6588728740027654753}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: Text (TMP)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3117,7 +3117,7 @@ GameObject:
   - component: {fileID: 6717252708997795307}
   - component: {fileID: 229909200354713863}
   - component: {fileID: 529126837217047642}
-  m_Layer: 2
+  m_Layer: 8
   m_Name: No
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3624,6 +3624,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 3074471628601745017, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483936
+      objectReference: {fileID: 0}
     - target: {fileID: 3533369827395663398, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -3696,6 +3700,10 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 5456733348963664102, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_RaycastMask.m_Bits
+      value: 2147483936
+      objectReference: {fileID: 0}
     - target: {fileID: 5563199296126487199, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 2
@@ -3719,6 +3727,10 @@ PrefabInstance:
     - target: {fileID: 6038107472648090404, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6232745470614056090, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
+      propertyPath: m_SlopeLimit
+      value: 20
       objectReference: {fileID: 0}
     - target: {fileID: 6237513019617653394, guid: f6336ac4ac8b4d34bc5072418cdc62a0, type: 3}
       propertyPath: m_Layer
@@ -3851,7 +3863,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.0424744, y: 0.12349348, z: 0.15138721}
   m_Center: {x: -0.014595704, y: -0.011746742, z: -0.11016798}
@@ -3887,7 +3899,7 @@ BoxCollider:
   m_LayerOverridePriority: 0
   m_IsTrigger: 0
   m_ProvidesContacts: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 3
   m_Size: {x: 0.0424744, y: 0.12349348, z: 0.15138721}
   m_Center: {x: 0.0145957, y: -0.011746742, z: -0.11016798}

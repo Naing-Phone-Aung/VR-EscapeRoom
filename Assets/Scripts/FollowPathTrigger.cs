@@ -21,7 +21,6 @@ public class FollowPathTrigger : MonoBehaviour
 
     private void Start()
     {
-        // Get XR Rig root and components
         rigRoot = transform.root;
         audioSource = GetComponent<AudioSource>();
         moveProvider = rigRoot.GetComponentInChildren<DynamicMoveProvider>();
@@ -48,10 +47,6 @@ public class FollowPathTrigger : MonoBehaviour
 
             trapCoroutine = StartCoroutine(WaitAndRespawn(2.5f));
         }
-        //else if (other.CompareTag("Goal"))
-        //{
-        //    Debug.Log("You finished the level.");
-        //}
     }
 
     private void OnTriggerExit(Collider other)

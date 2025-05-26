@@ -6,8 +6,8 @@ public class FlashHintBlink : MonoBehaviour
 {
     [Header("Flash Settings")]
     public Color flashColor = Color.white;
-    public float flashDuration = 0.6f;     // Time it takes to fully flash in/out
-    public float flashInterval = 6f;     // Wait time between each flash
+    public float flashDuration = 0.6f;    
+    public float flashInterval = 6f;     
     public float flashIntensity = 1.5f;
     public bool startFlashingOnStart = true;
 
@@ -19,7 +19,7 @@ public class FlashHintBlink : MonoBehaviour
     void Start()
     {
         rend = GetComponent<Renderer>();
-        materialInstance = rend.material; // Clone material instance
+        materialInstance = rend.material; 
         originalColor = materialInstance.color;
 
         if (startFlashingOnStart)
@@ -32,7 +32,6 @@ public class FlashHintBlink : MonoBehaviour
     {
         while (true)
         {
-            // Lerp to flashColor
             float timer = 0f;
             while (timer < flashDuration)
             {
@@ -42,7 +41,6 @@ public class FlashHintBlink : MonoBehaviour
                 yield return null;
             }
 
-            // Lerp back to original
             timer = 0f;
             while (timer < flashDuration)
             {

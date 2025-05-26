@@ -9,7 +9,7 @@ public class UVTextReveal : MonoBehaviour
 
     void Start()
     {
-        SetAlpha(hiddenAlpha); // Start invisible
+        SetAlpha(hiddenAlpha); 
     }
 
     void OnTriggerEnter(Collider other)

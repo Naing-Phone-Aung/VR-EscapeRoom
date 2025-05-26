@@ -20,18 +20,15 @@ public class MagnetAttach : MonoBehaviour
 
         if (other.gameObject.name == attachPointName)
         {
-            // Detach from hand
             if (grabInteractable.isSelected)
             {
                 grabInteractable.interactionManager.SelectExit(grabInteractable.firstInteractorSelecting, grabInteractable);
             }
 
-            // Snap and attach
             transform.position = other.transform.position;
             transform.rotation = other.transform.rotation;
             transform.SetParent(other.transform);
 
-            // Disable physics
             rb.isKinematic = true;
             grabInteractable.enabled = false;
 

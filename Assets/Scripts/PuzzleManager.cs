@@ -5,9 +5,9 @@ public class PuzzleManager : MonoBehaviour
     public CubeToggle[] cubes;
     public bool[] solutionPattern;
 
-    public AudioClip winSound;             // Assign in Inspector
-    public Animator doorAnimator;          // Assign Animator with "Open" trigger
-    public AudioSource audioSource;        // Optional: assign or let it auto-create
+    public AudioClip winSound;            
+    public Animator doorAnimator;          
+    public AudioSource audioSource;        
 
     private bool puzzleCompleted = false;
 
@@ -18,7 +18,7 @@ public class PuzzleManager : MonoBehaviour
         for (int i = 0; i < cubes.Length; i++)
         {
             if (cubes[i].IsWhite() != solutionPattern[i])
-                return; // Not correct yet
+                return; 
         }
 
         puzzleCompleted = true;
@@ -39,7 +39,5 @@ public class PuzzleManager : MonoBehaviour
         {
             doorAnimator.SetTrigger("Open");
         }
-
-        // Add any additional win logic here (particles, level transition, etc.)
     }
 }

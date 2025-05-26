@@ -6,7 +6,7 @@ public class Portal : MonoBehaviour
 
     void Update()
     {
-        transform.Rotate(0, 100 * Time.deltaTime, 0); // rotates the portal
+        transform.Rotate(0, 100 * Time.deltaTime, 0); 
     }
 }
 

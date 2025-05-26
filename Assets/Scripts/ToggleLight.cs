@@ -7,7 +7,6 @@ public class ToggleLight : MonoBehaviour
     public bool isOn = false;
     public Collider targetCollider = null;
 
-    // Optional: reference to the text to force-hide
     public TextMeshPro revealText;
 
     void Start()
@@ -30,7 +29,6 @@ public class ToggleLight : MonoBehaviour
 
         if (!isOn && revealText != null)
         {
-            // force hide text when light off
             SetAlpha(revealText, 0f);
         }
     }

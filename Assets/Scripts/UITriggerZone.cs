@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class UITriggerZone : MonoBehaviour
 {
-    public GameObject uiToShow; // Assign your UI prefab or object here
+    public GameObject uiToShow; 
 
     private void OnTriggerEnter(Collider other)
     {

@@ -69,7 +69,7 @@ public class KeypadController : MonoBehaviour
             unlocked = true;
 
             PlaySound(correctSound);
-            PlaySuccessEffect(); // <- new line
+            PlaySuccessEffect(); 
 
             if (doorAnimator != null)
                 doorAnimator.SetTrigger("Open");

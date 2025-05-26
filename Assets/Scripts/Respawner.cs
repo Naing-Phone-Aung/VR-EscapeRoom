@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class Respawner : MonoBehaviour
 {
-    public Transform respawnPoint; // Assign this in the Inspector
+    public Transform respawnPoint; 
 
     private Rigidbody rb;
 
@@ -19,7 +19,6 @@ public class Respawner : MonoBehaviour
     {
         if (collision.collider.CompareTag("Ground"))
         {
-            // Delay slightly before respawn
             Invoke(nameof(Respawn), 1f);
         }
     }
