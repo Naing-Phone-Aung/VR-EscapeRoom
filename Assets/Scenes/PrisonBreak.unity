@@ -2558,7 +2558,6 @@ GameObject:
   m_Component:
   - component: {fileID: 159037476}
   - component: {fileID: 159037477}
-  - component: {fileID: 159037479}
   - component: {fileID: 159037478}
   - component: {fileID: 159037481}
   - component: {fileID: 159037480}
@@ -2578,8 +2577,8 @@ Transform:
   m_GameObject: {fileID: 159037475}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 3.0723991, y: 2.187, z: -0.010272822}
-  m_LocalScale: {x: 0.97, y: 0.98, z: 1}
+  m_LocalPosition: {x: -1.8500007, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 994422221}
@@ -2597,8 +2596,8 @@ Transform:
   - {fileID: 430606949}
   - {fileID: 1162713423}
   - {fileID: 234802126}
-  m_Father: {fileID: 1054828445}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_Father: {fileID: 1282727182}
+  m_LocalEulerAnglesHint: {x: 0, y: -31.544266, z: 0}
 --- !u!54 &159037477
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2647,45 +2646,6 @@ BoxCollider:
   serializedVersion: 3
   m_Size: {x: 2.0397303, y: 4, z: 0.28645587}
   m_Center: {x: 0.7465948, y: 0, z: 0.15778336}
---- !u!59 &159037479
-HingeJoint:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 159037475}
-  serializedVersion: 3
-  m_ConnectedBody: {fileID: 0}
-  m_ConnectedArticulationBody: {fileID: 0}
-  m_Anchor: {x: 1.88, y: 0, z: 0}
-  m_Axis: {x: 0, y: 1, z: 0}
-  m_AutoConfigureConnectedAnchor: 1
-  m_ConnectedAnchor: {x: 0, y: 0, z: 0}
-  m_UseSpring: 0
-  m_Spring:
-    spring: 0
-    damper: 0
-    targetPosition: 0
-  m_UseMotor: 0
-  m_Motor:
-    targetVelocity: 0
-    force: 0
-    freeSpin: 0
-  m_UseLimits: 1
-  m_ExtendedLimits: 0
-  m_UseAcceleration: 0
-  m_Limits:
-    min: -90
-    max: 0
-    bounciness: 0
-    bounceMinVelocity: 0.2
-    contactDistance: 0
-  m_BreakForce: Infinity
-  m_BreakTorque: Infinity
-  m_EnableCollision: 0
-  m_EnablePreprocessing: 1
-  m_MassScale: 1
-  m_ConnectedMassScale: 1
 --- !u!114 &159037480
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17718,7 +17678,7 @@ Transform:
   - {fileID: 1798343054}
   - {fileID: 1483481760}
   - {fileID: 640057805}
-  - {fileID: 159037476}
+  - {fileID: 1282727182}
   - {fileID: 1772541166}
   - {fileID: 1437926059}
   - {fileID: 1004366927}
@@ -20467,6 +20427,78 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1281507733}
   m_CullTransparentMesh: 1
+--- !u!1 &1282727181
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1282727182}
+  - component: {fileID: 1282727184}
+  - component: {fileID: 1282727183}
+  m_Layer: 0
+  m_Name: Hindge
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1282727182
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282727181}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.8668995, y: 2.187, z: -0.010273225}
+  m_LocalScale: {x: 0.97, y: 0.98, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 159037476}
+  m_Father: {fileID: 1054828445}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!111 &1282727183
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282727181}
+  m_Enabled: 1
+  serializedVersion: 4
+  m_Animation: {fileID: 7400000, guid: 97e37a6acb6455d4bb0fdba7eb2d3b6b, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_UpdateMode: 0
+  m_CullingType: 0
+--- !u!95 &1282727184
+Animator:
+  serializedVersion: 7
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1282727181}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: b56b01811bcd4cf45ab3f1e79620a75d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_AnimatePhysics: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!1 &1296894189
 GameObject:
   m_ObjectHideFlags: 0
@@ -33666,8 +33698,10 @@ MonoBehaviour:
   turnAngle: -90
   turnDuration: 1
   attachTransform: {fileID: 1351905921}
-  doorRigidbody: {fileID: 159037477}
   keyTurningClip: {fileID: 8300000, guid: b04268409645e0d419035f608ebdd0a5, type: 3}
+  doorOpenClip: {fileID: 8300000, guid: f97469fb479787a4cb56874e9993ba21, type: 3}
+  doorAnimator: {fileID: 1282727184}
+  doorOpenTrigger: OpenDoor
 --- !u!82 &6932130006825910038
 AudioSource:
   m_ObjectHideFlags: 0

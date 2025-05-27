@@ -7,14 +7,15 @@ public class KeySocketTurner : MonoBehaviour
     public float turnAngle = 90f;
     public float turnDuration = 1f;
     public Transform attachTransform;
-    public Rigidbody doorRigidbody;
     public AudioClip keyTurningClip;
+    public AudioClip doorOpenClip;
+    public Animator doorAnimator;
+    public string doorOpenTrigger = "OpenDoor";
 
     private XRSocketInteractor socket;
     private bool hasTurned = false;
     private Quaternion initialAttachRotation;
     private AudioSource audioSource;
-    private bool waitingToFreeze = false;
 
     void Awake()
     {
@@ -23,34 +24,18 @@ public class KeySocketTurner : MonoBehaviour
 
         if (attachTransform != null)
             initialAttachRotation = attachTransform.localRotation;
-
-        if (doorRigidbody != null)
-        {
-            doorRigidbody.isKinematic = true;
-            doorRigidbody.collisionDetectionMode = CollisionDetectionMode.Continuous;
-        }
     }
 
     void Update()
     {
         if (!hasTurned && socket != null && socket.hasSelection)
         {
-            StartCoroutine(RotateKeyAndUnlockDoor());
+            StartCoroutine(RotateKeyAndOpenDoor());
             hasTurned = true;
-        }
-
-        if (waitingToFreeze && doorRigidbody != null)
-        {
-            float yRotation = NormalizeAngle(doorRigidbody.transform.eulerAngles.y);
-            if (yRotation <= -88f)
-            {
-                doorRigidbody.isKinematic = true;
-                waitingToFreeze = false;
-            }
         }
     }
 
-    private IEnumerator RotateKeyAndUnlockDoor()
+    private IEnumerator RotateKeyAndOpenDoor()
     {
         if (attachTransform == null)
             yield break;
@@ -74,22 +59,14 @@ public class KeySocketTurner : MonoBehaviour
 
         attachTransform.localRotation = endRot;
 
-        yield return new WaitForFixedUpdate();
-
-        if (doorRigidbody != null)
+        if (doorAnimator != null)
         {
-            doorRigidbody.isKinematic = false;
-            doorRigidbody.WakeUp();
-
-            doorRigidbody.angularVelocity = transform.up * 2f;
-            waitingToFreeze = true;
+            doorAnimator.SetTrigger(doorOpenTrigger);
         }
-    }
 
-    // Converts angles from 0–360 to -180–180
-    private float NormalizeAngle(float angle)
-    {
-        if (angle > 180f) angle -= 360f;
-        return angle;
+        if (doorOpenClip != null && audioSource != null)
+        {
+            audioSource.PlayOneShot(doorOpenClip);
+        }
     }
 }
