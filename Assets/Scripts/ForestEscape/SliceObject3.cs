@@ -4,7 +4,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine.InputSystem;
 
-public class SliceObject : MonoBehaviour
+public class SliceObject3 : MonoBehaviour
 {
     public Transform startSlicePoint;
     public Transform endSlicePoint;
@@ -12,6 +12,11 @@ public class SliceObject : MonoBehaviour
     public LayerMask sliceableLayer;
     public Material crossSectionMaterial;
     public float cutForce = 2000;
+
+    void Start()
+    {
+        
+    }
 
     void FixedUpdate()
     {
@@ -35,9 +40,13 @@ public class SliceObject : MonoBehaviour
         {
             GameObject upperHull = hull.CreateUpperHull(target, crossSectionMaterial);
             SetupSlicedComponenet(upperHull);
+            upperHull.layer = target.layer;
+            upperHull.tag = "RockPiece";
 
             GameObject lowerHull = hull.CreateLowerHull(target, crossSectionMaterial);
             SetupSlicedComponenet(lowerHull);
+            lowerHull.layer = target.layer;
+            lowerHull.tag = "RockPiece";
 
             Destroy(target);
         }

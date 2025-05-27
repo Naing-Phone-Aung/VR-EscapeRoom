@@ -8,13 +8,13 @@ public class KeySocketTurner : MonoBehaviour
     public float turnDuration = 1f;
     public Transform attachTransform;
     public Rigidbody doorRigidbody;
-
     public AudioClip keyTurningClip;
 
     private XRSocketInteractor socket;
     private bool hasTurned = false;
     private Quaternion initialAttachRotation;
     private AudioSource audioSource;
+    private bool waitingToFreeze = false;
 
     void Awake()
     {
@@ -37,6 +37,16 @@ public class KeySocketTurner : MonoBehaviour
         {
             StartCoroutine(RotateKeyAndUnlockDoor());
             hasTurned = true;
+        }
+
+        if (waitingToFreeze && doorRigidbody != null)
+        {
+            float yRotation = NormalizeAngle(doorRigidbody.transform.eulerAngles.y);
+            if (yRotation <= -88f)
+            {
+                doorRigidbody.isKinematic = true;
+                waitingToFreeze = false;
+            }
         }
     }
 
@@ -70,6 +80,16 @@ public class KeySocketTurner : MonoBehaviour
         {
             doorRigidbody.isKinematic = false;
             doorRigidbody.WakeUp();
+
+            doorRigidbody.angularVelocity = transform.up * 2f;
+            waitingToFreeze = true;
         }
+    }
+
+    // Converts angles from 0–360 to -180–180
+    private float NormalizeAngle(float angle)
+    {
+        if (angle > 180f) angle -= 360f;
+        return angle;
     }
 }

@@ -14,6 +14,9 @@ TagManager:
   - small maze
   - ExitBlock
   - MazeGround
+  - Rock
+  - Sword
+  - RockPiece
   layers:
   - Default
   - TransparentFX

@@ -14,7 +14,7 @@ public class DoorCollisionSound : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if (doorPushClip != null && collision.gameObject.CompareTag("Controller"))
+        if (doorPushClip != null && collision.gameObject.CompareTag("Player"))
         {
             audioSource.PlayOneShot(doorPushClip);
         }
